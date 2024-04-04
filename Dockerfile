@@ -5,7 +5,10 @@ ARG OWNER=jupyter
 ARG BASE_CONTAINER=$REGISTRY/$OWNER/datascience-notebook
 FROM $BASE_CONTAINER
 
-LABEL maintainer="Jupyter Project <gersonrodriguesantos8@gmail.com>"
+LABEL org.opencontainers.image.maintainer="Jupyter Project <gersonrodriguesantos8@gmail.com>"
+LABEL org.opencontainers.image.source=https://github.com/GersonRS/jupyterhub
+LABEL org.opencontainers.image.description="Jupyter Project"
+LABEL org.opencontainers.image.licenses=MIT
 
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
