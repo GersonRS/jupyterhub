@@ -1,4 +1,2 @@
-FROM nginx:alpine
+FROM ubuntu:20.04
 
-COPY ./nginx_confs /etc/nginx/conf.d
-COPY ./devops-stack-helloworld /usr/share/nginx/html
